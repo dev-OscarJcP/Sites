@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/src/javascript/calendar.js" defer></script>
+    <title>Barber Shop</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+          
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Serviços </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+                
+            </ul>
+
+            <div id="logo">
+                <img src="./src/images/barberShop_logo.png" >
+            </div>
+
+            <button class="btn-active">
+                Entrar
+              </button>
+         
+            <button class="btn-default">
+              Agendar
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#service">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Serviços</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+               Agendar
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+         
+            <div id="cta">
+                <h1 class="title">
+                    Corte de <br> Respeito, <br>Estilo que <br>
+                    <span>Impõe.</span>
+                </h1>
+
+                <p class="description">
+                    Aqui, cada detalhe faz a diferença.<br> Do corte ao atendimento, nosso <br>
+                    estilo é tão único quanto você.
+                </p>
+
+                <div id="cta_buttons-default">
+                    <a href="#" class="btn-default">
+                    Agendar
+                    </a>
+
+                    <a href="tel:+55555555555" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (27) 9999-9999
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+          
+        </section>
+
+        <section id="service">
+          
+            <h3 class="section-subtitle">
+                Conheça nossos serviços
+            </h3>
+            <h2 class="section-title">
+             Especiais
+            </h2>
+
+            <div id="haiers">
+                <div class="hair">
+                    <!-- <div class="hair-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> -->
+
+                    <img src="src/images/hair.jpeg" class="hair-image" alt="">
+
+                    <h3 class="hair-title">
+                        Corte Masculino
+                    </h3>
+
+                    <span class="hair-description">
+                        Transforme seu visual com cortes modernos e personalizados. Seja um degradê bem feito ou um estilo clássico, garantimos que você sairá com o look que combina com sua personalidade.
+                    </span>
+
+                    <!-- <div class="hair-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div> -->
+
+                    <div class="hair-price">
+                       
+                    </div>
+                </div>
+
+                <div class="hair">
+                    <!-- <div class="hair-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> -->
+
+                    <img src="src/images/hair1.jpeg" class="hair-image" alt="">
+
+                    <h3 class="hair-title">
+                        Navalha Tradicional
+                    </h3>
+
+                    <span class="hair-description">
+                        Experimente o clássico ritual da navalha, com precisão e estilo. Nada como a sensação de um rosto limpo e bem tratado, com aquele acabamento de mestre.
+                    </span>
+
+                    <!-- <div class="hair-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div> -->
+
+                    <div class="hair-price">
+                     
+                    </div>
+                </div>
+
+                <div class="hair">
+                    <!-- <div class="hair-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> -->
+
+                    <img src="src/images/hair2.jpeg" class="hair-image" alt="">
+
+                    <h3 class="hair-title">
+                        Barba e Aparação
+                    </h3>
+
+                    <span class="hair-description">
+                        Linha perfeita e acabamento impecável. Cuidamos da sua barba com os melhores produtos e técnicas, para que você saia daqui renovado.
+                    </span>
+
+                    <!-- <div class="hair-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div> -->
+
+                    <div class="hair-price">
+                      
+                    </div>
+                </div>
+
+                <div class="hair">
+                    <!-- <div class="hair-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> -->
+
+                    <img src="src/images/hair3.jpeg" class="hair-image" alt="">
+
+                    <h3 class="hair-title">
+                        Sombrancelha Masculina
+                    </h3>
+
+                    <span class="hair-description">
+                        Realce o olhar com o design de sobrancelhas que valoriza o formato do seu rosto. Limpeza e simetria para uma aparência forte e alinhada.
+                    </span>
+<!-- 
+                    <div class="hair-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div> -->
+
+                    <div class="hair-price">
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="src/images/barberman.jpg" id="testimonial_chef" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os clientes falam sobre nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/avatar2.jpg" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Fulana de Tal
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/images/avatar3.jpg" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Fulana de Tal
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-default">
+                    Ver mais avaliações
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>BarberShop</h1>
+                <p>Estilo que impõe.</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Menu</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Início</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Serviços</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Contato</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Nova Carapina II</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">(27) 9999-9999
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Segunda à Sábado 10h-22h Domingo 14h-21h</a>
+                </li>
+            </ul>        
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2023 all rights reserved
+        </div>
+    </footer>
+    <script src="/src/javascript/script.js"></script>
+</body>
+</html>

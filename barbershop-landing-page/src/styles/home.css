@@ -1,0 +1,121 @@
+#home {
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+    background-color: #fcfcfc;
+    padding:  28px 0px;
+}
+
+#cta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    background-image: url('/src/images/Barber-Shop_design.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:  125px 8%;
+
+}
+
+#cta .title {
+    font-size: 4rem;
+    color: var(--color-neutral-0);
+    margin: 0;
+}
+
+#cta .title span {
+    color: var(--color-primary-7);
+}
+
+#cta .description {
+    color: var(--color-neutral-0);;
+
+    font-size: 1.2rem;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons-default {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+   
+   
+}
+
+#cta_buttons-default a {
+    text-decoration: none;
+    color: var(--color-neutral-7);
+   
+}
+
+#phone_button {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#phone_button button {
+    box-shadow: none;
+}
+
+#banner {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+    z-index: 2;
+}
+
+#banner img {
+    height: 70%;
+    width: fit-content;
+}
+
+.shape {
+    background-color: var();
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    border-radius: 40% 30% 0% 20%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #phone_button button {
+        display: none;
+    }
+}
